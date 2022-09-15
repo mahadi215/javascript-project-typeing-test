@@ -5,6 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blog</title>
+    <style>
+        .q-container{
+            margin: 10px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .q-box{
+            background-color: aliceblue;
+            padding: 50px;
+            margin: 10px;
+            
+        }
+        @media only screen and (max-width: 768px) {
+            .q-container{
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -23,12 +41,12 @@
 
             </div>
             <div class="q-box">
-                <h2> how does javascript event loop work</h2>
+                <h2> How does javascript event loop work?</h2>
                 <p> The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
 
             </div>
             <div class="q-box">
-                <h2> How i am get undefined in javascript</h2>
+                <h2> How i am get undefined in javascript?</h2>
                 <p> I will get undefined value when you call a non-existent property or method of an object. In the above example, a function Sum does not return any result but still we try to assign its resulted value to a variable. So in this case, result will be undefined.</p>
 
             </div>
